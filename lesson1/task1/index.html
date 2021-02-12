@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script type="module" src="js/main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="menu">
+        <label class="menu_label">
+            <input class="menu_item" type="radio" checked name="menu_item" data-func="datecalc" />
+            КАЛЬКУЛЯТОР ДАТ
+        </label>
+        <label class="menu_label">
+            <input class="menu_item" type="radio" name="menu_item" data-func="timer" />
+            ТАЙМЕР
+        </label>
+    </div>
+
+    <form id="datecalc">
+        <h3>Калькулятор дат</h3>
+        <label>
+            <strong>первая дата:</strong>
+            <input type="date" name="firstDate" />
+        </label>
+        <label>
+            <strong>вторая дата:</strong>
+            <input type="date" name="secondDate" />
+        </label>
+        <button type="submit">Расчитать промежуток</button>
+        <p id="datecalc__result"></p>
+    </form>
+
+    <form class="invisible" id="timer">
+        <h3>Таймер</h3>
+        <label>
+            <strong>Время:</strong>
+            <input type="time" name="time" step="1" />
+        </label>
+        <button type="submit">Старт</button>
+        <button type="reset">Стоп</button>
+        <p id="timer__result"></p>
+    </form>
+</body>
+
+</html>
