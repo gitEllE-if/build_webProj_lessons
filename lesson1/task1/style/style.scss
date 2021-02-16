@@ -34,6 +34,13 @@ form {
         &:hover {
             background-color:white;
         }
+        &:active {
+            transform: translateY(2px);
+        }
+        &:disabled {
+            background-color: rgb(207, 218, 219);
+            border-color: rgb(207, 218, 219);
+        }
     }
 }
 

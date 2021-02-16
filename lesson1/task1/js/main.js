@@ -5,7 +5,7 @@ const menu = document.querySelector('.menu');
 menu.addEventListener('change', showFunc);
 
 function showFunc(event) {
-    let formEls = document.getElementsByTagName('form');
+    let formEls = document.getElementsByClassName('appForm');
     for (let form of formEls) {
         form.classList.add('invisible');
     }

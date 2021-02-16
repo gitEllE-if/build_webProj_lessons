@@ -50,6 +50,16 @@ form button:hover {
   background-color: white;
 }
 
+form button:active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+form button:disabled {
+  background-color: #cfdadb;
+  border-color: #cfdadb;
+}
+
 .invisible {
   display: none;
 }
